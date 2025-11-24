@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mohammad | Class Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * { box-sizing: border-box; }
+    body{
+      margin:0;
+      background:#fff;
+      font-family:"Segoe UI", system-ui, sans-serif;
+      color:#352432;
+      padding:45px 18px 70px;
+    }
+    .mainDiv{
+      max-width:920px;
+      margin:0 auto;
+    }
+    header.textBlock{
+      text-align:center;
+      margin-bottom:20px;
+    }
+    header.textBlock h1{
+      margin:0 0 8px;
+      font-size:clamp(2rem,5vw,3rem);
+      color:#352432;
+    }
+    header.textBlock p{
+      color:#2f413d;
+      margin:0;
+    }
+    nav.navArea{
+      background:#c6cbb4;
+      border-radius:18px;
+      padding:18px;
+      border:1px solid rgba(47,65,61,.2);
+      box-shadow:0 20px 35px rgba(53,36,50,.1);
+    }
+    nav.navArea ul{
+      list-style:none;
+      padding:0;
+      margin:0;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    nav.navArea a{
+      text-decoration:none;
+      color:#352432;
+      text-align:center;
+      font-weight:600;
+      padding:10px 18px;
+      border-radius:999px;
+      border:1px solid rgba(53,36,50,.05);
+      background:#fff;
+    }
+    nav.navArea a:hover{
+      border-color:#4a9a75;
+      color:#2f413d;
+    }
+    section.factPanel{
+      margin-top:30px;
+      background:#f8f8f3;
+      border-radius:26px;
+      padding:34px;
+      border:1px solid rgba(47,65,61,.12);
+      box-shadow:0 24px 40px rgba(53,36,50,.12);
+    }
+    section.factPanel h2{
+      margin:0 0 18px;
+      letter-spacing:.25em;
+      font-size:1rem;
+      color:#2f413d;
+      text-transform:uppercase;
+    }
+    section.factPanel ul{
+      list-style:none;
+      margin:0;
+      padding:0;
+      display:grid;
+      gap:12px;
+    }
+    section.factPanel li{
+      padding:14px 18px 14px 50px;
+      border-radius:18px;
+      border:1px solid rgba(53,36,50,.1);
+      background:#fff;
+      position:relative;
+    }
+    section.factPanel li::before{
+      content:'';
+      width:12px;
+      height:12px;
+      border-radius:50%;
+      background:#4a9a75;
+      position:absolute;
+      left:20px; top:50%;
+      transform:translateY(-50%);
+      box-shadow:0 0 0 4px rgba(74,154,117,.25);
+    }
+    @media(min-width:640px){
+      nav.navArea ul{
+        flex-direction:row;
+        justify-content:center;
+      }
+      nav.navArea a{ min-width:200px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="mainDiv">
+    <header class="textBlock">
+      <h1>Mohammad Elhafdaoui's Intensive Programming HTML Project</h1>
+      <p>This site is deployed to Render.com.</p>
+    </header>
+
+    <nav class="navArea">
+      <ul>
+        <li><a href="myUniversity.html">My University</a></li>
+        <li><a href='resume.html'>Resume</a></li>
+      </ul>
+    </nav>
+
+    <section class="factPanel">
+      <h2>Interesting Facts About Me</h2>
+      <ul>
+        <li>My favorite programming language is Python.</li>
+        <li>I enjoy working on web development projects.</li>
+        <li>I started coding at age 12.</li>
+        <li>My favorite sport is basketball.</li>
+        <li>I speak 4 languages.</li>
+        <li>My favorite Computer Science course was Intro to Machine learning &amp; AI.</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

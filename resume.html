@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:"Segoe UI", system-ui, sans-serif;
+      background:#fff;
+      color:#352432;
+      padding:55px 18px 80px;
+    }
+    .resumeWrap{
+      max-width:980px;
+      margin:0 auto;
+    }
+    .introCard{
+      text-align:center;
+      padding:44px 28px;
+      border-radius:32px;
+      background:#f6f7f2;
+      border:1px solid rgba(47,65,61,.15);
+      box-shadow:0 26px 50px rgba(53,36,50,.12);
+    }
+    .introCard h1{
+      margin:0 0 10px;
+      font-size:clamp(2rem,5vw,3.1rem);
+      letter-spacing:-.03em;
+      color:#352432;
+    }
+    .introCard p{
+      margin:0;
+      color:#2f413d;
+    }
+    .introCard ul{
+      list-style:none;
+      padding:0;
+      margin:22px 0 0;
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      align-items:center;
+      color:#2f413d;
+    }
+    .introCard a{
+      color:#4a9a75;
+      text-decoration:none;
+      font-weight:600;
+    }
+    .introCard a:hover{
+      text-decoration:underline;
+    }
+    .sectionBox{
+      margin-top:24px;
+      background:#fdfdfb;
+      border-radius:28px;
+      border:1px solid rgba(53,36,50,.12);
+      padding:32px;
+      box-shadow:0 22px 40px rgba(53,36,50,.1);
+    }
+    .sectionBox h2{
+      margin:0 0 18px;
+      text-transform:uppercase;
+      letter-spacing:.2em;
+      font-size:.95rem;
+      color:#2f413d;
+    }
+    article.entryCard{
+      border-radius:20px;
+      padding:20px 24px;
+      border:1px solid rgba(47,65,61,.15);
+      background:linear-gradient(135deg, rgba(165,180,143,.25), #fff 55%);
+    }
+    article.entryCard + article.entryCard{
+      margin-top:16px;
+    }
+    article.entryCard h3{
+      margin:0 0 6px;
+      color:#352432;
+    }
+    article.entryCard p{
+      margin:0 0 10px;
+      color:#2f413d;
+      font-weight:600;
+    }
+    article.entryCard ul{
+      margin:0;
+      padding-left:1.2rem;
+      line-height:1.6;
+    }
+    article.entryCard li + li{
+      margin-top:6px;
+    }
+    nav.footer2{
+      text-align:center;
+      font-weight:600;
+      margin-top:26px;
+    }
+    nav.footer2 a{
+      color:#352432;
+      text-decoration:none;
+      padding:10px 16px;
+    }
+    nav.footer2 a:hover{
+      color:#2f413d;
+      border-bottom:1px solid #4a9a75;
+    }
+    @media(min-width:640px){
+      .introCard ul{
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px 26px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resumeWrap">
+    <header class="introCard">
+      <h1>Mohammad Elhafdaoui</h1>
+      <p>Paterson, NJ, USA</p>
+      <ul>
+        <li>Email: <a href="mailto:Mohammad.elhafdaoui@gmail.com">Mohammad.elhafdaoui@gmail.com</a></li>
+        <li>LinkedIn: <a href='https://www.linkedin.com/in/moelh'>in/moelh</a></li>
+        <li>Portfolio: <a href="https://mohammadelhafdaoui.dev">mohammadelhafdaoui.dev</a></li>
+      </ul>
+    </header>
+
+    <section class="sectionBox">
+      <h2>Experience</h2>
+      <article class="entryCard">
+        <h3>Founder &amp; Owner, Raaha LLC</h3>
+        <p>Old Tappan, NJ · August 2024 - Present</p>
+        <ul>
+          <li>Generated $5K+ in revenue through 100+ transactions by optimizing pricing and supplier terms.</li>
+          <li>Built an automated price monitoring and anomaly detection system using Python web scraping to identify profitable opportunities.</li>
+          <li>Improved site visibility through SEO optimization, boosting organic traffic and conversions.</li>
+        </ul>
+      </article>
+      <article class="entryCard">
+        <h3>Software Developer, Ummah Professionals</h3>
+        <p>Remote · June 2024 - September 2024</p>
+        <ul>
+          <li>Built and shipped full-stack features for internal tools using React, TypeScript, Node.js, and REST APIs.</li>
+          <li>Streamlined team workflows by automating routine tasks and refining user flows for internal teams.</li>
+          <li>Delivered in Agile sprints using Git, code reviews, and Vercel deployments with monitoring and API tests.</li>
+        </ul>
+      </article>
+      <article class="entryCard">
+        <h3>Software Engineering Intern, Ideanomics Inc.</h3>
+        <p>New York, NY · May 2024 - August 2024</p>
+        <ul>
+          <li>Built and maintained REST APIs and internal dashboards for EV fleet and charging telemetry systems using Python and JavaScript.</li>
+          <li>Contributed to Agile sprints with cross-functional teams across subsidiaries (WAVE, Solectrac).</li>
+          <li>Deployed features in production environments, ensuring scalability and performance under real conditions.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="sectionBox">
+      <h2>Projects</h2>
+      <article class="entryCard">
+        <h3>Kids Choice INC. - Full-Stack TypeScript React Site</h3>
+        <p>GitHub: <a href="https://github.com/Mumchip">github.com/Mumchip</a> | Live: <a href="https://www.kidschoicenj.com">www.kidschoicenj.com</a></p>
+        <ul>
+          <li>Designed and deployed a marketing and lead capture platform using React, Node.js, and Vercel APIs.</li>
+          <li>Built a responsive TypeScript + Vite SPA with route protection, form validation, and Decap CMS integration.</li>
+          <li>Automated contact workflows via Nodemailer and file uploads through Vercel serverless functions.</li>
+        </ul>
+      </article>
+      <article class="entryCard">
+        <h3>AI Project - Image Classification with CNNs</h3>
+        <p>GitHub: <a href='https://github.com/Mumchip'>github.com/Mumchip</a></p>
+        <ul>
+          <li>Implemented a modular image classifier using PyTorch CNNs on CIFAR-10 with configurable layers and checkpoints.</li>
+          <li>Enabled GPU acceleration via CUDA and visualized training with TensorBoard.</li>
+          <li>Focused on extensibility and reproducibility for future experimentation.</li>
+        </ul>
+      </article>
+      <article class="entryCard">
+        <h3>Automated Price Monitoring &amp; Error Detection System</h3>
+        <p>Source code available upon request.</p>
+        <ul>
+          <li>Processed 50,000+ daily data points using Python, Selenium, and BeautifulSoup for scraping and validation.</li>
+          <li>Boosted pricing efficiency and reduced stock errors, increasing profit margins by 30%.</li>
+          <li>Integrated data visualization and Twilio API for real-time alerts.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="sectionBox">
+      <h2>Education</h2>
+      <p>B.S. Computer Science, Minor in Mathematics - Rutgers University - Sep 2023 - May 2026</p>
+    </section>
+
+    <nav class="footer2">
+      <a href="index.html">Back to Home</a> | <a href='myUniversity.html'>My University</a>
+    </nav>
+  </div>
+</body>
+</html>
